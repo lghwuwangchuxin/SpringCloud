@@ -128,7 +128,7 @@ public class VerificationCodeServiceImpl implements VerificationCodeService {
 					stringRedisTemplate.delete(key);
 				}
 
-				if (delete == Boolean.FALSE && second != null && second > 0) {
+				if (delete.equals(Boolean.FALSE) && second != null && second > 0) {
 					stringRedisTemplate.expire(key, second, TimeUnit.SECONDS);
 				}
 

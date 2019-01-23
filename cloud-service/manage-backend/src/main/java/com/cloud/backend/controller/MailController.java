@@ -41,7 +41,7 @@ public class MailController {
     @PostMapping
     public Mail save(@RequestBody Mail mail, Boolean send) {
         mailService.saveMail(mail);
-        if (Boolean.TRUE == send) {
+        if (Boolean.TRUE.equals(send)) {
             mailService.sendMail(mail);
         }
 
@@ -60,7 +60,7 @@ public class MailController {
     @PutMapping
     public Mail update(@RequestBody Mail mail, Boolean send) {
         mailService.updateMail(mail);
-        if (Boolean.TRUE == send) {
+        if (Boolean.TRUE.equals(send)) {
             mailService.sendMail(mail);
         }
 

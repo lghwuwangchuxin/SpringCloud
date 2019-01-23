@@ -268,6 +268,7 @@ public class WechatServiceImpl implements WechatService {
         log.info("{}，绑定微信成功，给微信设置用户id，{}", appUser, wechatUserInfo);
     }
 
+    @Override
     public WechatUserInfo checkAndGetWechatUserInfo(String tempCode, String openid) {
         String key = prefixKey(tempCode);
         String string = stringRedisTemplate.opsForValue().get(key);

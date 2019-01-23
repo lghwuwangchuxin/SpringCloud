@@ -43,9 +43,11 @@ import com.cloud.model.log.Log;
 /**
  * 日志存储到elasticsearch实现
  *
- * @author 小威老师 xiaoweijiagou@163.com
+ * @author lgh
  */
-//@Service
+
+/*@Primary
+@Service*/
 public class EsLogServiceImpl implements LogService, ApplicationContextAware {
 
 	private static final Logger logger = LoggerFactory.getLogger(EsLogServiceImpl.class);

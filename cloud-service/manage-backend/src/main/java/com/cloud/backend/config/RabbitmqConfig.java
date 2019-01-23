@@ -12,7 +12,7 @@ import com.cloud.model.user.constants.UserCenterMq;
 /**
  * rabbitmq配置
  * 
- * @author 小威老师
+ * @author lgh
  *
  */
 @Configuration

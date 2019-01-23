@@ -16,6 +16,7 @@ import lombok.Setter;
 
 /**
  * spring security当前登录对象
+ * @author wuwangchuxin
  */
 @Getter
 @Setter

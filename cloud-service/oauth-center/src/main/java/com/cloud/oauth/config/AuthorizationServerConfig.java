@@ -33,7 +33,7 @@ import java.util.Map;
 /**
  * 授权服务器配置
  *
- * @author 小威老师 xiaoweijiagou@163.com
+ * @author lgh
  */
 @Configuration
 @EnableAuthorizationServer

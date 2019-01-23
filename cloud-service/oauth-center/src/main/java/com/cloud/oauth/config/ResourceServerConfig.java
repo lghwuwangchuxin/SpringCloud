@@ -21,7 +21,7 @@ import com.cloud.common.constants.PermitAllUrl;
  * 注意认证中心的@EnableResourceServer和别的微服务里的@EnableResourceServer有些不同<br>
  * 别的微服务是通过org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoTokenServices来获取用户的
  * 
- * @author 小威老师 xiaoweijiagou@163.com
+ * @author lgh
  *
  */
 @Configuration

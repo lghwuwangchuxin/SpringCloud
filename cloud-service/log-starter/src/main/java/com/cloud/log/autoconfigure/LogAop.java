@@ -25,7 +25,7 @@ import com.cloud.model.user.LoginAppUser;
 /**
  * aop实现日志
  *
- * @author 小威老师 xiaoweijiagou@163.com
+ * @author lgh
  */
 @Aspect
 public class LogAop {

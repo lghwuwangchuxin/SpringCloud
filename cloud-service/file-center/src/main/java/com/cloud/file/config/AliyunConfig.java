@@ -9,7 +9,7 @@ import com.aliyun.oss.OSSClient;
 /**
  * 阿里云配置
  * 
- * @author 小威老师
+ * @author lgh
  *
  */
 @Configuration

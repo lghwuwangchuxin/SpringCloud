@@ -14,9 +14,8 @@
 2. spring-cloud-starter-eureka-server改为spring-cloud-starter-netflix-eureka-server
 3. spring-cloud-starter-feign改为spring-cloud-starter-openfeign
 ## 2018.05.12 引入zipkin追踪
-1. 文档见05 zipkin追踪.docx
-2. 相关服务pom里加入了spring-cloud-starter-zipkin，全局搜下即可找到
-3. 配置加入了spring.zipkin.base-url=http://localhost:9411,注意我们是yml格式
+1. 相关服务pom里加入了spring-cloud-starter-zipkin，全局搜下即可找到
+2. 配置加入了spring.zipkin.base-url=http://localhost:9411,注意我们是yml格式
 ## 2018.05.17 将AppUser类的字段enabled类型由boolean改为Boolean
 ## 2018.05 spring boot由1.x升级到2.x
 1. 认证中心sql脚本，表oauth_client_details的字段client_secret由明文改为密文,刷下cloud_oauth.sql即可

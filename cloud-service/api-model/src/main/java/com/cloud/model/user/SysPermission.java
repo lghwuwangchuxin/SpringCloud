@@ -8,7 +8,7 @@ import lombok.Data;
 /**
  * 权限标识
  * 
- * @author 小威老师
+ * @author lgh
  *
  */
 @Data

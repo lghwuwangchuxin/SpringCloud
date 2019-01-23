@@ -8,7 +8,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
  * 密码校验器<br>
  * 2018.08.01
  *
- * @author 小威老师 xiaoweijiagou@163.com
+ * @author lgh
  */
 @Configuration
 public class PasswordEncoderConfig {

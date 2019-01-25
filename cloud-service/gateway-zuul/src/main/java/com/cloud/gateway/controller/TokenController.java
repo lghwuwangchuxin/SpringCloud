@@ -24,7 +24,7 @@ import java.util.concurrent.CompletableFuture;
 /**
  * 登陆、刷新token、退出
  *
- * @author 小威老师
+ * @author lgh
  */
 @Slf4j
 @RestController

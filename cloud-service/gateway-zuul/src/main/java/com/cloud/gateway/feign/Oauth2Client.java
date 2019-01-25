@@ -13,7 +13,7 @@ public interface Oauth2Client {
     /**
      * 获取access_token<br>
      * 这是spring-security-oauth2底层的接口，类TokenEndpoint<br>
-     * 感兴趣可看下视频章节05.5 生成access_token的核心源码
+     *
      *
      * @param parameters
      * @return

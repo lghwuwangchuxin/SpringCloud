@@ -1,26 +1,25 @@
 package com.cloud.log.service.impl;
 
-import java.util.Collections;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Async;
-import org.springframework.stereotype.Service;
-
 import com.cloud.common.utils.PageUtil;
 import com.cloud.log.dao.LogDao;
 import com.cloud.log.service.LogService;
 import com.cloud.model.common.Page;
 import com.cloud.model.log.Log;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.stereotype.Service;
+
+import java.util.Collections;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 日志存储到mysql实现
  *
  * @author lgh
  */
-//@Primary
+@Primary
 @Service
 public class LogServiceImpl implements LogService {
 

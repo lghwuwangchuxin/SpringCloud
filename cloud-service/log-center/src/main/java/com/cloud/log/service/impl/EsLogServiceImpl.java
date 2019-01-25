@@ -46,8 +46,8 @@ import com.cloud.model.log.Log;
  * @author lgh
  */
 
-/*@Primary
-@Service*/
+@Primary
+@Service
 public class EsLogServiceImpl implements LogService, ApplicationContextAware {
 
 	private static final Logger logger = LoggerFactory.getLogger(EsLogServiceImpl.class);

@@ -6,6 +6,7 @@ import com.cloud.log.service.LogService;
 import com.cloud.model.common.Page;
 import com.cloud.model.log.Log;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 

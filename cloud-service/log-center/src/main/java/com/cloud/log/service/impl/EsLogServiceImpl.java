@@ -32,6 +32,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.scheduling.annotation.Async;
+import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
 import com.alibaba.fastjson.JSONObject;
@@ -46,7 +47,7 @@ import com.cloud.model.log.Log;
  * @author lgh
  */
 
-@Primary
+//@Primary
 @Service
 public class EsLogServiceImpl implements LogService, ApplicationContextAware {
 

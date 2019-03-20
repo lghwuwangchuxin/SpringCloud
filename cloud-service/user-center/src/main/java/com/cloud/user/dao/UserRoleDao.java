@@ -13,7 +13,7 @@ import com.cloud.model.user.SysRole;
  * 用户角色关系<br>
  * 用户和角色是多对多关系，sys_role_user是中间表
  *
- * @author 小威老师
+ * @author lgh
  */
 @Mapper
 public interface UserRoleDao {

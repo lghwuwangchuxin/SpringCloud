@@ -37,6 +37,12 @@ public class UserDetailServiceImpl implements UserDetailsService {
     @Autowired
     private SmsClient smsClient;
 
+    /**
+     *
+     * @param username
+     * @return
+     * @throws 根据用户名去用户中心获取用户信息
+     */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         // 为了支持多类型登录，这里username后面拼装上登录类型,如username|type

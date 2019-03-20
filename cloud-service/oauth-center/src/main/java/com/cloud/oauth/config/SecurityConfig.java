@@ -32,7 +32,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	 * 方法上的注解@Autowired的意思是，方法的参数的值是从spring容器中获取的<br>
 	 * 即参数AuthenticationManagerBuilder是spring中的一个Bean
 	 *
-	 * @param auth 认证管理
+	 * @param auth 认证管理/密码加密
 	 * @throws Exception 用户认证异常信息
 	 */
 	@Autowired

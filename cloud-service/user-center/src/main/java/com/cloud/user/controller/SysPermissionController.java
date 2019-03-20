@@ -23,7 +23,7 @@ public class SysPermissionController {
 	 * @param sysPermission
 	 * @return
 	 */
-	@LogAnnotation(module = "添加权限")
+	@LogAnnotation(module = "添加权限")//自定义日志注解
 	@PreAuthorize("hasAuthority('back:permission:save')")
 	@PostMapping("/permissions")
 	public SysPermission save(@RequestBody SysPermission sysPermission) {

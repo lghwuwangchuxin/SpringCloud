@@ -16,7 +16,7 @@ import com.cloud.common.constants.PermitAllUrl;
  * 资源服务配置
  * 
  * @author lgh
- *
+ *@EnableResourceServer该注解可以调用认证中心的信息
  */
 @EnableResourceServer
 @EnableWebSecurity

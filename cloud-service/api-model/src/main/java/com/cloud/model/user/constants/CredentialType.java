@@ -3,7 +3,7 @@ package com.cloud.model.user.constants;
 /**
  * 用户账号类型
  *
- * @author 小威老师
+ * @author lgh
  */
 public enum CredentialType {
 

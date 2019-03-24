@@ -35,10 +35,11 @@
 <script src="js/constant.js"></script>
 <script src="js/libs/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
+	//判断登入界面是否在最顶层，js自带函数
 	if (top != self) {
 		parent.location.href = loginPage;
 	}
-
+	//从web缓存中获取access_token
 	var access_token = localStorage.getItem("access_token");
 	if (access_token != null && access_token.trim().length != 0) {
 		$.ajax({
@@ -62,6 +63,7 @@
 		var password = $.trim($('#password').val());
 		if (username == "" || password == "") {
 			$("#info").html('用户名或者密码不能为空');
+			//禁用登入按钮
 			$(obj).attr("disabled", false);
 		} else {
 			$.ajax({

@@ -39,7 +39,7 @@ public class MenuController {
 
 		List<Menu> menus = menuService
 				.findByRoles(roles.parallelStream().map(SysRole::getId).collect(Collectors.toSet()));
-
+		//遍历一级菜单
 		List<Menu> firstLevelMenus = menus.stream().filter(m -> m.getParentId().equals(0L))
 				.collect(Collectors.toList());
 		firstLevelMenus.forEach(m -> {

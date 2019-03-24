@@ -45,6 +45,7 @@ mybatis:
   mapper-locations: classpath:/mybatis-mappers/*
   configuration:
     mapUnderscoreToCamelCase: true
+    #http://local.gateway.com:8080/api-o/user-me底层代码调用认证中心根据token获取当前登入用户信息
 security:
   oauth2:
     resource:

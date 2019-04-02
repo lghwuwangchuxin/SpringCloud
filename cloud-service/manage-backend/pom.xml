@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>manage-backend</artifactId>
-
+	<packaging>war</packaging>
 	<parent>
 		<groupId>com.cloud</groupId>
 		<artifactId>cloud-service</artifactId>
@@ -63,14 +63,40 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zipkin</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>se.jiderhamn.classloader-leak-prevention</groupId>
+			<artifactId>classloader-leak-prevention-servlet</artifactId>
+			<version>2.1.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
-		<finalName>${project.artifactId}</finalName><!--打jar包去掉版本号-->
+		<finalName>${project.artifactId}</finalName><!--打jar或war包去掉版本号-->
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>utf8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://localhost:8080/manager/text</url>
+					<username>admin</username>
+					<password>password</password>
+					<update>true</update>
+					<path>/webapp</path>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

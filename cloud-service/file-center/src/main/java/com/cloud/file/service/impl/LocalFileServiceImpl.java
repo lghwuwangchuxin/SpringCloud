@@ -17,7 +17,7 @@ import com.cloud.file.utils.FileUtil;
  * 该实现文件服务只能部署一台<br>
  * 如多台机器间能共享到一个目录，即可部署多台
  * 
- * @author 小威老师 xiaoweijiagou@163.com
+ * @author lgh
  *
  */
 @Service("localFileServiceImpl")

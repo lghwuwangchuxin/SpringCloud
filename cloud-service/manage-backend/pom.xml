@@ -91,11 +91,22 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
-					<url>http://localhost:8080/manager/text</url>
+					<!-- 注意此处的url,它的值就是第一步中的tomcat发布应用管理页面地址 -->
+					<url>http://localhost:8080/manager/html</url>
 					<username>admin</username>
 					<password>password</password>
 					<update>true</update>
-					<path>/webapp</path>
+					<!--这里面的path是我们访问的路径(项目名)-->
+					<path>/web</path>
+				</configuration>
+			</plugin>
+			<!-- 打包跳过单元测试 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
 		</plugins>

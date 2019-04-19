@@ -92,7 +92,8 @@
 				<version>2.2</version>
 				<configuration>
 					<!-- 注意此处的url,它的值就是第一步中的tomcat发布应用管理页面地址 -->
-					<url>http://localhost:8080/manager/html</url>
+					<url>http://localhost:8080/manager/text</url>
+					<!-- 此处的名字必须和setting.xml中配置的ID一致 -->
 					<username>admin</username>
 					<password>password</password>
 					<update>true</update>

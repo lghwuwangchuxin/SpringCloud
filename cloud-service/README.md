@@ -50,5 +50,8 @@
 ## 2018.08.04 解决每次登陆返回同一个access_token问题（非常重要，务必更新）
 1. 认证中心添加类RandomAuthenticationKeyGenerator
 2. 认证中心中修改AuthorizationServerConfig里的方法tokenStore()
+## 2019.04.19 添加字段注释，和一键自动化部署插件
+1.在微信实体WechatUserInfo添加字段说明
+2.在manage-backend模块pom.xml添加tomcat7-maven-plugin插件远程war包部署项目
 
 

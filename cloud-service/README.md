@@ -53,5 +53,6 @@
 ## 2019.04.19 添加字段注释，和一键自动化部署插件
 1.在微信实体WechatUserInfo添加字段说明
 2.在manage-backend模块pom.xml添加tomcat7-maven-plugin插件远程war包部署项目
+##2019.4.21docker自动化部署
 
 

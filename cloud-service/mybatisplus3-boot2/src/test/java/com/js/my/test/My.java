@@ -25,11 +25,11 @@ import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.test.generator.GeneratorTest;
 
 public class My extends GeneratorTest {
-	private static String BASE_PATH = "com.js.site.log.manage";// 包路径
+	private static String BASE_PATH = "com.cloud.organization";// 包路径
 	private static String OUT_CLASS_PATH ="/src/main/java";
 	private static String OUT_XML_PATH = "/src/main/resources/mapper/";
     //数据库
-	private static String TABLENAMES[] = {"LOG_SITE_LOG"}; 
+	private static String TABLENAMES[] = {"cloud_org"};
 	
 	public static void main(String[] args) throws IOException {
 		AutoGenerator mpg = new AutoGenerator();
@@ -38,7 +38,7 @@ public class My extends GeneratorTest {
 		tableFillList.add(new TableFill("ASDD_SS", FieldFill.INSERT_UPDATE));
 
 		// 直接输出到目录
-		File directory = new File("");// 参数为空
+		File directory = new File("E:\\Mywork\\cloud-service\\organization-center\\src\\main\\java\\com\\cloud\\organization");// 参数为空
 		final String outFile = directory.getCanonicalPath();
 		System.out.println(outFile);
 
@@ -64,11 +64,11 @@ public class My extends GeneratorTest {
 
 		/***** 数据源配置 ********************************************/
 		DataSourceConfig dsc = new DataSourceConfig();
-		dsc.setDbType(DbType.ORACLE);
-		dsc.setDriverName("oracle.jdbc.OracleDriver");
-		dsc.setUsername("scott2");
-		dsc.setPassword("scott");
-		dsc.setUrl("jdbc:oracle:thin:@192.168.1.188:1521:orcl");
+		dsc.setDbType(DbType.MYSQL);
+		dsc.setDriverName("com.mysql.jdbc.Driver");
+		dsc.setUsername("root");
+		dsc.setPassword("root");
+		dsc.setUrl("jdbc:mysql://loclhost:3306/cloud_organization?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false");
 		mpg.setDataSource(dsc);
 		
 		/***** 策略配置 ********************************************/

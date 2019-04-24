@@ -20,6 +20,7 @@
 		<module>log-starter</module>
 		<module>file-center</module>
 		<module>notification-center</module>
+		<module>organization-center</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

@@ -48,7 +48,7 @@ import com.cloud.model.log.Log;
  * @author lgh
  */
 
-@Primary
+//@Primary
 @Service
 public class EsLogServiceImpl implements LogService, ApplicationContextAware {
 

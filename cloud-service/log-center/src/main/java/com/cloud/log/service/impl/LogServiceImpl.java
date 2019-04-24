@@ -20,7 +20,7 @@ import java.util.Map;
  *
  * @author lgh
  */
-//@Primary
+@Primary
 @Service
 public class LogServiceImpl implements LogService {
 

@@ -9,7 +9,9 @@
 		<artifactId>cloud-service</artifactId>
 		<version>2.0</version>
 	</parent>
-
+	<properties>
+		<docker.repostory>https://cloud.docker.com/repository/docker/dockerlgh/springcloud</docker.repostory>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -27,6 +29,26 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<!--构建镜像-->
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>1.0.0</version>
+				<configuration>
+					<!--Maven 的配置文件 setting.xml 中增加相关 server 配置，主要配置 Docker registry用户认-->
+					<serverId>docker-repostory</serverId>
+					<!--docker部署的地址-->
+					<dockerHost>http://192.168.52.206:2375</dockerHost>
+					<imageName>${docker.repostory}/${project.groupId}/${project.artifactId}:${project.version}</imageName>
+					<dockerDirectory>${project.build.outputDirectory}</dockerDirectory>
+					<resources>
+						<resource>
+							<directory>${project.build.directory}</directory>
+							<include>${project.build.finalName}.jar</include>
+						</resource>
+					</resources>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

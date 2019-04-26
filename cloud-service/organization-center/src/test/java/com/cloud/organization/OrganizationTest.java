@@ -12,6 +12,7 @@ public class OrganizationTest {
 
 @Test
 public void  inserOrg(){
+    System.out.println("qfwqefq");
 
 }
 

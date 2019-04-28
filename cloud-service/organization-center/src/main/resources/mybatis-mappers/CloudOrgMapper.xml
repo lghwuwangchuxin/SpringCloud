@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.organization.mapper.CloudOrgDao">
+
+    <!-- 开启二级缓存 -->
+
+   <!-- <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cloud.organization.model.CloudOrg">
+        <id column="org_id" property="orgId" />
+        <result column="org_name" property="orgName" />
+        <result column="org_parent_id" property="orgParentId" />
+        <result column="org_path" property="orgPath" />
+        <result column="org_short_id" property="orgShortId" />
+        <result column="org_short_name" property="orgShortName" />
+        <result column="org_state" property="orgState" />
+        <result column="org_create_date" property="orgCreateDate" />
+        <result column="org_update_date" property="orgUpdateDate" />
+        <result column="org_code" property="orgCode" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        org_id, org_name, org_parent_id, org_path, org_short_id, org_short_name, org_state, org_create_date, org_update_date, org_code
+    </sql>
+
+</mapper>

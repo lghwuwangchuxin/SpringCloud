@@ -20,7 +20,6 @@ private CloudOrgService coudOrgService;
 public void  inserOrg(){
    CloudOrg org=new CloudOrg();
    org.setOrgCode("1");
-   org.setOrgPath("1213");
    coudOrgService.save(org);
    System.out.println("dfsfgsgsg");
 

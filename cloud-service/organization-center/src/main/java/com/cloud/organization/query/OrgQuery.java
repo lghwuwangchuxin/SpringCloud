@@ -22,7 +22,7 @@ import lombok.Data;
 @Data
 public class OrgQuery implements java.io.Serializable{
     @ApiModelProperty(value="创建时间")
-    private String createTime="createTime";
+    private String createTime="org_create_date";
     @ApiModelProperty(value="排序类别（ ASC DESC）")
     private String sortOrder="asc";
     /**
@@ -39,15 +39,15 @@ public class OrgQuery implements java.io.Serializable{
         QueryWrapper<CloudOrg> column = new QueryWrapper<CloudOrg>();
         if(!StringUtils.isEmpty(orgName)) column.like("org_name", orgName);
         if(!StringUtils.isEmpty(orgPath)) column.like("org_path", orgPath);
-        if (!StringUtils.isEmpty(createTime)) {
+        /*if (!StringUtils.isEmpty(createTime)) {
             if ("ASC".equals(sortOrder.toUpperCase())) {
                 column.orderByAsc(MyStringUtils.CoverLineStr(createTime));
             } else {
                 column.orderByDesc(MyStringUtils.CoverLineStr(createTime));
             }
         }else {
-            column.orderByDesc("createTime");
-        }
+            column.orderByDesc("org_create_date");
+        }*/
         return column;
     }
 }

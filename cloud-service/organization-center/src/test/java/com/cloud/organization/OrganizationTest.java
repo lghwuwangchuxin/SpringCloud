@@ -1,6 +1,6 @@
 package com.cloud.organization;
 
-import com.cloud.organization.model.CloudOrg;
+import com.cloud.model.organization.CloudOrg;
 
 import com.cloud.organization.service.CloudOrgService;
 
@@ -18,11 +18,16 @@ public class OrganizationTest {
 private CloudOrgService coudOrgService;
 @Test
 public void  inserOrg(){
-   CloudOrg org=new CloudOrg();
-   org.setOrgCode("1");
-   coudOrgService.save(org);
-   System.out.println("dfsfgsgsg");
-
+   for (int i=0;i<=10;i++){
+      CloudOrg org=new CloudOrg();
+      org.setOrgCode("A"+i);
+      coudOrgService.save(org);
+   }
 }
 
+@Test
+public void getOrg(){
+   CloudOrg org=coudOrgService.getById(2);
+   System.out.println(org.getOrgName());
+}
 }

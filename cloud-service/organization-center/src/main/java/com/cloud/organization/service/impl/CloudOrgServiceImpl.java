@@ -1,6 +1,6 @@
 package com.cloud.organization.service.impl;
 
-import com.cloud.organization.model.CloudOrg;
+import com.cloud.model.organization.CloudOrg;
 import com.cloud.organization.mapper.CloudOrgDao;
 import com.cloud.organization.service.CloudOrgService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

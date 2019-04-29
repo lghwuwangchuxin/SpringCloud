@@ -1,6 +1,6 @@
 package com.cloud.organization.service;
 
-import com.cloud.organization.model.CloudOrg;
+import com.cloud.model.organization.CloudOrg;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -12,5 +12,4 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2019-04-28
  */
 public interface CloudOrgService extends IService<CloudOrg> {
-
 }

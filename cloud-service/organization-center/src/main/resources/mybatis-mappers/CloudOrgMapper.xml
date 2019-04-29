@@ -6,7 +6,7 @@
     <!--<cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.cloud.organization.model.CloudOrg">
+    <resultMap id="BaseResultMap" type="com.cloud.model.organization.CloudOrg">
         <id column="org_id" property="orgId" />
         <result column="org_name" property="orgName" />
         <result column="org_parent_id" property="orgParentId" />

@@ -1,6 +1,6 @@
 package com.cloud.organization.mapper;
 
-import com.cloud.organization.model.CloudOrg;
+import com.cloud.model.organization.CloudOrg;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

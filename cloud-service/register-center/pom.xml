@@ -34,7 +34,7 @@
 				<configuration>
 					<!--Maven 的配置文件 setting.xml 中增加相关 server 配置，主要配置 Docker registry用户认-->
 					<serverId>docker-repostory</serverId>
-					<dockerHost>http://192.168.0.6:2375</dockerHost>
+					<dockerHost>http://172.16.1.151:2375</dockerHost>
 					<imageName>${project.artifactId}</imageName>
 					<dockerDirectory>${project.build.outputDirectory}</dockerDirectory>
 					<resources>

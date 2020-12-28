@@ -49,7 +49,7 @@ import com.cloud.model.log.Log;
  */
 
 //@Primary
-@Service
+//@Service
 public class EsLogServiceImpl implements LogService, ApplicationContextAware {
 
 	private static final Logger logger = LoggerFactory.getLogger(EsLogServiceImpl.class);

@@ -21,7 +21,7 @@ spring:
       connection-test-query: SELECT 1
   rabbitmq:
     host: local.rabbitmq.com
-    port: 5672
+    port: 15672
     username: cloud-dev
     password: cloud-dev
     virtual-host: /

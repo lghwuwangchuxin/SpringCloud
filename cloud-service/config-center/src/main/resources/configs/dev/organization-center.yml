@@ -15,14 +15,14 @@ spring:
       connection-test-query: SELECT 1
   rabbitmq:
     host: local.rabbitmq.com
-    port: 5672
+    port: 15672
     username: cloud-dev
     password: cloud-dev
     virtual-host: /
   redis:
     host: local.redis.com
     port: 6379
-    password:
+    password: root
     timeout: 10s
     lettuce:
       pool:
